@@ -40,7 +40,6 @@ class TabularDataClean():
     def combine_description_strings(self):
         # self.df['Description'] = self.df['Description'].apply(lambda x: ast.literal_eval(x))
         self.df= pd.read_csv('rows_missing_ratings_removed.csv')
-        print("This is a test:")
         self.df=self.df[self.df['Description'].str.contains('About this space')== True]
         # self.df['Description'] = self.df[self.df['Description'].str.startswith('About this space', na= False)]
         self.df['Description'] = self.df['Description'].str.replace("'About this space',","")
@@ -53,7 +52,6 @@ class TabularDataClean():
     
     def set_default_feature_values(self):
         self.df = pd.read_csv('descriptions_joined.csv')
-        
         self.df.loc[self.df['guests'].isnull(),['guests']] = 1 
         self.df.loc[self.df['beds'].isnull(),['beds']] = 1  
         self.df.loc[self.df['bathrooms'].isnull(),['bathrooms']] = 1  
@@ -68,19 +66,10 @@ class TabularDataClean():
 
     def load_airbnb(self,cleaned_dataset):
         dataset = pd.read_csv(cleaned_dataset)
-        dataset_index = dataset.stack()
-        # features = [list(x) for x in dataset_index.index]
-        # labels = [[x] for x in dataset_index.values]
-        # print(features[-2])
-        # print(labels[-1])
         features = dataset[["guests","beds","bathrooms","Cleanliness_rating","Accuracy_rating","Communication_rating","Location_rating","Check-in_rating","Value_rating","amenities_count"]]
         labels = dataset[["Price_Night"]]
         loaded_data = features,labels
         return loaded_data
 
-# a = TabularDataClean()
-# a.load_airbnb('clean_tabular_data.csv')
-
-         
 
 
