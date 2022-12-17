@@ -28,7 +28,7 @@ Here I learnt about neural networks. I used a new tool called PyTorch which allo
 Finally, to describe my neural network model - Here is the abstract.
 
 
-The PriceNightDataset class is a custom PyTorch dataset class that is used to load and preprocess the input data for training or evaluating the neural network. It takes two arguments in the constructor: X and y. These are the input features and output labels for the training or test data.
+>The PriceNightDataset class is a custom PyTorch dataset class that is used to load and preprocess the input data for training or evaluating the neural network. It takes two arguments in the constructor: X and y. These are the input features and output labels for the training or test data.
 
 The __len__ method returns the length of the dataset, which is the number of examples in the dataset.
 
