@@ -28,7 +28,7 @@ Here I learnt about neural networks. I used a new tool called PyTorch which allo
 # Finally, to describe my neural network model - Here is the abstract.
 
 
->T> This code is a machine learning script in Python that is used to train a model to predict the nightly price of Airbnb listings based on certain features. 
+>>  This code is a machine learning script in Python that is used to train a model to predict the nightly price of Airbnb listings based on certain features. 
 
 The script starts by importing several libraries that are used throughout the code, including matplotlib, numpy, pandas, and PyTorch. 
 
