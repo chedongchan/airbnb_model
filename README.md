@@ -28,27 +28,27 @@ Here I learnt about neural networks. I used a new tool called PyTorch which allo
 # Finally, to describe my neural network model - Here is the abstract.
 
 
->>  This code is a machine learning script in Python that is used to train a model to predict the nightly price of Airbnb listings based on certain features. 
+    This code is a machine learning script in Python that is used to train a model to predict the nightly price of Airbnb listings based on certain features. 
 
-The script starts by importing several libraries that are used throughout the code, including matplotlib, numpy, pandas, and PyTorch. 
+    The script starts by importing several libraries that are used throughout the code, including matplotlib, numpy, pandas, and PyTorch. 
 
-Next, it defines several functions that are used to clean and preprocess the data, including: "remove_rows_with_missing_ratings", "combine_description_strings", and "set_default_feature_values". All of these functions are called in the "clean_tabular_data function" to clean the data and preprocesses them for subsequent steps. The load_airbnb function is used to load the data and return the relevant features and labels in a tuple format. 
+    Next, it defines several functions that are used to clean and preprocess the data, including: "remove_rows_with_missing_ratings", "combine_description_strings", and "set_default_feature_values". All of these functions are called in the "clean_tabular_data function" to clean the data and preprocesses them for subsequent steps. The load_airbnb function is used to load the data and return the relevant features and labels in a tuple format. 
 
-The AirbnbNightlyPriceDataset class is a PyTorch dataset class that is used to convert the data into a format that can be used to train the model.
+    The AirbnbNightlyPriceDataset class is a PyTorch dataset class that is used to convert the data into a format that can be used to train the model.
 
-The FullyConnectedNet class represents a fully connected neural network model with three hidden layers and one output layer. The input size is determined by the number of features in the data, and the output size is determined by the number of classes in the labels. The hidden sizes are determined by the number of neurons in each hidden layer. The forward function defines the forward pass of the model, in which the input data is passed through the fully connected layers and passed through an activation function (ReLU) before the final prediction is made.
+    The FullyConnectedNet class represents a fully connected neural network model with three hidden layers and one output layer. The input size is determined by the number of features in the data, and the output size is determined by the number of classes in the labels. The hidden sizes are determined by the number of neurons in each hidden layer. The forward function defines the forward pass of the model, in which the input data is passed through the fully connected layers and passed through an activation function (ReLU) before the final prediction is made.
 
-The train function is used to train the model using the given data and hyperparameters. It takes the following arguments:
+    The train function is used to train the model using the given data and hyperparameters. It takes the following arguments:
 
-    model: the model to be trained
-    dataset: a PyTorch dataset object that contains the training data
-    optimizer: an optimizer object that is used to update the model's parameters during training
-    loss_fn: a loss function that is used to calculate the difference between the model's predictions and the true labels
-    _epochs: the number of training epochs to run
-    batch_size: the number of samples to include in each mini-batch
+        model: the model to be trained
+        dataset: a PyTorch dataset object that contains the training data
+        optimizer: an optimizer object that is used to update the model's parameters during training
+        loss_fn: a loss function that is used to calculate the difference between the model's predictions and the true labels
+        _epochs: the number of training epochs to run
+        batch_size: the number of samples to include in each mini-batch
 
-The function first creates a PyTorch data loader object from the dataset, using the batch size as the number of samples per batch. It then iterates over the number of epochs, and within each epoch it iterates over the data loader object. For each batch of data, the function retrieves the input features and labels, feeds them to the model to make a prediction, and calculates the loss between the prediction and the true labels. It then performs a backward pass to calculate the gradients of the loss with respect to the model's parameters, and updates the model's parameters using the optimizer object. Finally, it returns the trained model.
+    The function first creates a PyTorch data loader object from the dataset, using the batch size as the number of samples per batch. It then iterates over the number of epochs, and within each epoch it iterates over the data loader object. For each batch of data, the function retrieves the input features and labels, feeds them to the model to make a prediction, and calculates the loss between the prediction and the true labels. It then performs a backward pass to calculate the gradients of the loss with respect to the model's parameters, and updates the model's parameters using the optimizer object. Finally, it returns the trained model.
 
-Finally, the test function is used to evaluate the performance of the trained model on a separate test set.
+    Finally, the test function is used to evaluate the performance of the trained model on a separate test set.
 
 
