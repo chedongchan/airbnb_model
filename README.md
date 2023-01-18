@@ -8,9 +8,9 @@ Using web scraped data on Airbnb of 1000 properties, I generate simple regressio
 
 ## Links
 
-*[Data Cleaning](https://github.com/chedongchan/airbnb_model/blob/main/stage_1_data_cleaning_1.ipynb)
-*[Data Visualisation](https://github.com/chedongchan/airbnb_model/blob/main/stage_2_visualisation.ipynb)
-*[Modelling](https://github.com/chedongchan/airbnb_model/blob/main/stage_3_modelling_and_predictions.ipynb)
+*[Data Cleaning](https://github.com/chedongchan/airbnb_model/blob/main/stage_1_data_cleaning_1.ipynb)  
+*[Data Visualisation](https://github.com/chedongchan/airbnb_model/blob/main/stage_2_visualisation.ipynb)  
+*[Modelling](https://github.com/chedongchan/airbnb_model/blob/main/stage_3_modelling_and_predictions.ipynb)  
 
 
 ## This project was part of AiCore data science specialisation programme.
