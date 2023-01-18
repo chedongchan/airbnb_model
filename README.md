@@ -16,6 +16,7 @@ Using web scraped data on Airbnb of 1000 properties, I generate simple regressio
 ## This project was part of AiCore data science specialisation programme.
 I document my progress and challenges that I faced throughout this project, as well as the skills and techniques learnt/utilised. 
 
+## Milestone 1 & 2: Repo initialisation and Data Collection
 ## Milestone 3: Data Preparation
 
 In this milestone, I have observed and processed the tabular data into a format that can be used to train/test models.
